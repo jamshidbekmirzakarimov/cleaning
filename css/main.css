@@ -109,8 +109,8 @@ ul,ol,li{
 
 /* ***** SITE HEADER START ***** */
 .site-header {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: var(--site-header-bg-color);
 }
 
@@ -192,6 +192,162 @@ ul,ol,li{
 
 /* ********** SITE MAIN START *********** */
 /* ****** HERO SECTION START ***** */
+.hero-section {
+  padding-top: 120px;
+  background-color: var(--hero-section-bg-color);
+  background-image: url(../images/hero-section-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(50% + 300px) calc(50% + 20px);
+}
+
+.hero-section-title {
+  width: 541px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 140%;
+  color: var(--site-main-text-color);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.hero-section-subtitle {
+  font-size: 18px;
+  line-height: 172%;
+  color: var(--site-main-text-desc-color);
+  width: 517px;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+.hero-section-btn {
+  padding: 18px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 166%;
+  color: var(--site-btn-text-color);
+  background-color: var(--site-btn-bg-color);
+  border-radius: 4px;
+}
+.hero-section-number-list {
+  display: flex;
+  align-items: center;
+  margin-top: 92px;
+  margin-bottom: 12px;
+}
+.hero-section-number-item {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--site-main-text-color);
+  margin-right: 80px;
+}
+.hero-section-number-item:last-child{
+  margin-left: 15px;
+}
+.hero-section-name-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 71px;
+}
+.hero-section-name-item {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #647685;
+  margin-right: 55px;
+}
+.hero-section-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-section-name-item:last-child{
+  margin-right: 0;
+}
+
+.hero-section-right-bottom {
+  position: relative;
+  width: 360px;
+  background-color: var(--site-header-bg-color);
+  padding-top: 36px;
+  padding-right: 67px;
+  padding-left: 67px;
+  padding-bottom: 76px;
+  border-radius: 28px 28px 0px 0px;
+  margin-left: auto;
+}
+
+.hero-section-right-bottom::before{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: 45px;
+  background-image: url(../images/users.svg);
+  background-color: #FCDC00;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  /* padding: 33px 27px; */
+  top: -50px;
+  right: 300px;
+}
+.our-crertve-team-title {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 100%;
+  color: #222326;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+.hero-section-right-bottom-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.team-box1 {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  /* padding: 5px; */
+  background-color: #48B774;
+  border-radius: 50%;
+}
+.team-box2 {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  padding: 5px;
+  background-color: #FF8345;
+  border-radius: 50%;
+  left: 60px;
+}
+.team-box3 {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  padding: 10px;
+  background-color: #FFCA45;
+  border-radius: 50%;
+  left: 120px;
+}
+
+.our-crertve-team-subtitle{
+  position: absolute;
+  display:block;
+  left: 180px;
+  padding: 30px 30px;
+  background-color: #EDEDED;
+  border-radius: 50%;
+  z-index: 99;
+}
 
 /* ****** HERO SECTION END ***** */
 /* ********** SITE MAIN END *********** */
