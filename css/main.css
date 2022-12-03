@@ -112,6 +112,8 @@ ul,ol,li{
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--site-header-bg-color);
+  position: sticky;
+  top: 0;
 }
 
 .container {
