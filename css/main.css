@@ -114,6 +114,7 @@ ul,ol,li{
   background-color: var(--site-header-bg-color);
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 .container {
@@ -173,9 +174,6 @@ ul,ol,li{
   margin-right: 12px;
 }
 
-.site-header-call-new {
-  
-}
 
 .site-header-call-title {
   margin-top: 0;
@@ -253,7 +251,7 @@ ul,ol,li{
   display: flex;
   align-items: center;
   margin: 0;
-  padding-bottom: 71px;
+  /* padding-bottom: 71px; */
 }
 .hero-section-name-item {
   font-family: 'Rubik';
@@ -350,6 +348,193 @@ ul,ol,li{
   border-radius: 50%;
   z-index: 99;
 }
-
 /* ****** HERO SECTION END ***** */
+
+/* ***** ABOUT SECTION START ***** */
+.about-section {
+  padding-top: 120px;
+  padding-bottom: 128px;
+  background-image: url(../images/about-section-bg.png);
+  background-repeat: no-repeat;
+  background-size: 650px 500px;
+  background-position: calc(50% + 320px);
+}
+
+.about-section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--site-main-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.about-title-bottom {
+  display: flex;
+  align-items: center;
+}
+.about-title-bottom-line {
+  width: 38px;
+  height: 2px;
+  background: #FE6B01;
+  border-radius: 100px;
+  margin-right: 4px;
+}
+.oval {
+  width: 4px;
+  height: 4px;
+}
+.about-section-subtitle {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: var(--site-main-text-color);
+  width: 492px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.about-section-servis-title {
+  font-size: 18px;
+  line-height: 156%;
+  color: #647685;
+  width: 513px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.bold {
+  font-weight: 600;
+}
+
+.underline{
+  color: #FE6B01;
+  font-weight: 600;
+}
+.about-section-servis-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #647685;
+  width: 500px;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+/* ***** ABOUT SECTION END ***** */
+
+/* **** OUR SERVICES SECTION START *** */
+/* **** OUR SERVICES SECTION END *** */
+.our-services-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #F4F9FD;
+}
+
+.services-section-title{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--site-main-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.our-services-section-title-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.our-services-section-subtitle {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: var(--site-main-text-color);
+  margin-top: 0;
+  margin-bottom: 19px;
+  
+}
+.our-services-section-desc {
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: #647685;
+  margin-top: 0;
+  margin-bottom: 78px;
+  width: 609px;
+}
+.our-services-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.our-services-section-list {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+.our-services-section-item {
+  background-color: var(--site-header-bg-color);
+  border: 1px solid #E3E3E3;
+  border-radius: 12px;
+  padding: 32px;
+  transition: box-shadow 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.our-services-section-item:hover{
+  box-shadow: 0px 54px 80px -16px rgba(219, 222, 229, 0.8);
+}
+.our-services-section-item::before{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 45px;
+  box-shadow: 0px 17.3392px 36.1233px rgba(0, 0, 0, 0.05);
+  background-position: center center;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.our-services-section-item:first-child:before{
+  background-image: url(../images/hospital-cleaning.svg);
+  background-color: #ffca4533;
+}
+.our-services-section-item:nth-child(2)::before{
+  background-image: url(../images/Office-Cleaning.svg);
+  background-color: rgba(72, 183, 116, 0.2);
+}
+.our-services-section-item:last-child:before{
+  background-image: url(../images/Home-Cleaning.svg);
+  background-color: #ffca4533;
+}
+.our-services-section-item-title {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 100%;
+  color: var(--site-main-section-name-color);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.our-services-section-item-subtitle {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  color: #767877;
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.our-services-section-svg {
+}
 /* ********** SITE MAIN END *********** */
